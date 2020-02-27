@@ -1,0 +1,39 @@
+<div class="container">
+  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+    <a class="navbar-brand" href="/">
+      <img src="/assets/img/logo.png" alt="Company Logo" class="img-fluid ml-md-5">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+      aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {% if page.page_name == 'home' %}active{% endif %}">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <!-- <li class="nav-item {% if page.page_name == 'about' %}active{% endif %}">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'projects' %}active{% endif %}">
+          <a class="nav-link" href="/volunteer">Volunteering</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'donate' %}active{% endif %}">
+          <a class="nav-link" href="/donate">Donate</a>
+        </li> -->
+        <li class="nav-item {% if page.page_name == 'gallery' %}active{% endif %}">
+          <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item {% if page.page_name == 'contact' %}active{% endif %}">
+          <a class="nav-link" href="/contact">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.facebook.com/shhssbarpak" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.youtube.com/channel/UCHnfYd41hIeEgutoT3LKeNw" target="_blank"><i class="fab fa-youtube"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>

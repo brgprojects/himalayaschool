@@ -1,0 +1,148 @@
+/* Custom SCSS */
+$color1: #fff;
+$color2: #222a75;
+$color3: #28a745;
+$color4: red;
+
+body {
+  font-family: "Nunito Sans", Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 600;
+  color: #999999;
+}
+
+.btn-primary {
+  background: $color3;
+  border: transparent;
+  font-size: 15px;
+  padding: 15px 25px;
+}
+.btn-primary:hover {
+  background: #07125f;
+}
+
+.color-highlight1 {
+  color: $color4;
+}
+
+.fa-twitter {
+  color: #38A1F3;
+}
+.fa-youtube {
+  color: red;
+}
+.fa-facebook-f {
+  color: #4267b2;
+}
+.fa-github {
+  color: #ccc;
+}
+.fa-linkedin-in {
+  color: #0077B5;
+}
+
+.p-6 {
+  padding: 4em;
+}
+.px-6 {
+  padding: 0 4em;
+}
+.py-6 {
+  padding: 4em 0;
+}
+.pt-6 {
+  padding-top: 4em;
+}
+.pb-6 {
+  padding-bottom: 4em;
+}
+.p-7 {
+  padding: 5em;
+}
+.px-7 {
+  padding: 0 5em;
+}
+.px-8 {
+  padding: 0 6em;
+}
+.px-9 {
+  padding: 0 7em;
+}
+.py-7 {
+  padding: 5em 0;
+}
+.pt-7 {
+  padding-top: 5em;
+}
+.pb-7 {
+  padding-bottom: 5em;
+}
+.mt-6 {
+  margin-top: 4em;
+}
+
+.orangered {
+  color: orangered !important;
+}
+
+// Countdown
+#countdown {
+  color: #F6F4F3;
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-size: 0.5em;
+  letter-spacing: 5px;
+  margin-top: 1em;
+  // text-align: center;
+}
+
+.days, .hours, .minutes, .seconds, .left {
+  display: inline-block;
+  padding: 10px;
+  width: 100px;
+  border-radius: 10px;
+  text-align: center;
+  background: #aaa;
+}
+
+.inauguration-text {
+  font-size: 2em !important;
+  font-family: "Oswald", sans-serif;
+  color: #333 !important;
+}
+
+// .days {
+//   background: #D87200;
+// }
+
+// .hours {
+//   background:  #FF3E41;
+// }
+
+// .minutes {
+//   background: #FFB20C;
+// }
+
+// .seconds {
+//   background:  #2186FF;
+// }
+
+.left {
+	background: #E10A0A;
+}
+.c-number {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  font-size: 5em;
+}
+
+@import "animate.min";
+@import "home";
+@import "blogs";
+@import "projects";
+@import "about";
+@import "donate";
+@import "contact";
+@import "responsive";

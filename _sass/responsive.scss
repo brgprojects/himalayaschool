@@ -1,0 +1,139 @@
+@media (max-width: 992px) {
+  .ftco-section .about-text h2, .ftco-section .text h2 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+}
+
+@media (max-width: 768px) {
+  .style-banner {
+    padding: 3em 2em;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 10%;
+    margin-left: 10%;
+  }
+  .main-banner h4 {
+    font-size: 2.2em;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0px;
+  }
+  .main-banner .nepali-caption {
+    font-size: 1.8em;
+  }
+  .main-banner .highlight {
+    font-size: 1.6em;
+  }
+  .main-banner h3 {
+    font-size: 2em;
+  }
+  .brand-abbr {
+    display: block;
+  }
+  .main-banner {
+    border-radius: 0px;
+    min-height: 500px;
+    background: url($baseurl + "/assets/img/banner-md.jpg") no-repeat;
+    background-size: cover;
+  }
+  .navbar-collapse {
+    background: #48a845;
+    z-index: 100;
+    padding: 2em 0;
+    
+    .nav-link {
+      color: #fff !important;
+    }
+  }
+  .footer-content:before {
+    right: 0;
+  }
+  .elevator-pitch h2 {
+    font-size: 2.2em;
+  }
+  .incubation-and-our-support .tab-content {
+    .tab-pane {
+      padding: 3em 2em 1em;
+    }
+    .support-caption {
+      font-size: 1.2em;
+      padding: 0;
+    }
+  }
+  .how-to-support {
+    .support-box {
+      padding: 0 1em;
+
+      .caption {
+        line-height: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .style-banner {
+    padding: 2em 1em;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top: 15%;
+    margin-left: 0%;
+  }
+  .style-banner .sub-caption {
+    margin-bottom: 1em;
+    font-size: 0.8em;
+  }
+  .style-banner .sub-caption {
+    font-size: 1.5em;
+  }
+  .style-banner .brand-abbr {
+    display: inline-block;
+  }
+  .style-banner .btn-story {
+    margin-top: 1em;
+  }
+  .style-banner .nepali-caption {
+    margin-bottom: 1.5em;
+  }
+  .main-banner h3 {
+    font-size: 2em;
+  }
+  .main-banner {
+    min-height: 550px;
+    background: url($baseurl + "/assets/img/banner-sm.jpg") no-repeat;
+    background-size: cover;
+  }
+  .navbar-collapse {
+    padding: 1em 0;
+  }
+  .footer-content:before {
+    top: 45%;
+    right: 0;
+  }
+  .elevator-pitch h2 {
+    font-size: 2.2em;
+  }
+  .single-project-box {
+    margin-bottom: 1.5em;
+  }
+  .contact-page .row, .contact-details.row .col-xs-12 {
+    padding: 0;
+    margin: 0;
+  }
+  .ftco-section .about-text {
+    padding: 1.5em !important;
+  }
+  .ftco-section .about-text h2, .ftco-section .text h2 {
+    font-size: 2em;
+  }
+  .section-title {
+    font-size: 2em;
+  }
+}
+
+@media(max-width: 360px) {
+  .elevator-pitch h2 {
+    font-size: 2em;
+  }
+}

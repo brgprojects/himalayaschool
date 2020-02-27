@@ -1,0 +1,30 @@
+<div class="card blog-card mb-4">
+  <img src="/assets/img/blogs/{{ include.post.thumbnail-img }}" class="img-fluid thumbnail-img" alt="" />
+  <div class="card-body">
+    <div class="border-bottom py-2">
+      <h5 class="blog-card-title font-weight-bold">
+        <a class="post-title" href="{{ post.url | prepend: site.url }}">{{ include.post.title }}</a>
+      </h5>
+      <div class="blog-card-heading">
+        <span><i class="fas fa-user mr-2"></i>{{ include.post.author }}</span>
+        <span><i class="fas fa-calendar-alt"></i>
+          {{ include.post.date | date: "%b %d, %Y" }}
+        </span>
+        <small class="text-muted">
+          {% include read-time.html
+                            content=include.post.content
+                            bracket_start='('
+                            bracket_end=')'
+                            unit='min'
+                            approx='true'
+                            caption='read'
+                %}
+        </small>
+      </div>
+    </div>
+    <p class="blog-card-text mt-3">
+      {{ include.post.content | strip_html | truncatewords: 20 }}
+      <a href="{{ post.url | prepend: site.url }}" class="blog-btn text-danger">Read more</a>
+    </p>
+  </div>
+</div>

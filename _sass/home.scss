@@ -1,0 +1,588 @@
+// Header SCSS
+.navbar {
+  height: 70px;
+  padding: 0; 
+  background: #fff;
+  box-shadow: 4px 5px 30px rgba(0,0,0,0.8);
+}
+.navbar-nav .nav-item.active .nav-link {
+  color: #111;
+  font-weight: 800;
+}
+.navbar-brand {
+  height: inherit; 
+  padding-bottom: 0px;
+}
+.navbar-brand img {
+  height: 90%;
+  margin-left: 20%; 
+}
+.navbar-nav {
+  margin-left: 30%; 
+}
+.navbar-toggler {
+  margin-right: 10px; 
+}
+.navbar-collapse .navbar-nav a {
+  color: black;
+  font-size: 16px; 
+}
+.navbar-collapse .nav-item {
+  margin-right: 10px;
+}
+.navbar-collapse .nav-link {
+  padding: 5px;
+  font-weight: 500; 
+  text-transform: uppercase;
+}
+.navbar .dropdown {
+  margin-top: 3px; 
+}
+.navbar .dropdown .dropdown-menu {
+  width: 200px; 
+}
+.navbar .dropdown .dropdown-menu li:hover {
+  background: #eaeaea; 
+}
+.btn.active:focus {
+  box-shadow: none !important; 
+}
+
+// Banner
+.main-banner {
+  background: #07125f;
+  margin-top: 4em;
+}
+.style-banner {
+  padding: 3em 5em;
+  background: rgba(0, 0, 0, 0.6);
+  margin-top: 5%;
+  margin-left: 20%;
+  color: #fff;
+}
+.style-banner p {
+  font-size: 16px;
+  color: #b5b4b4;
+  letter-spacing: 3px;
+}
+.style-banner .nepali-caption {
+  margin-bottom: 1em;
+}
+.main-banner h4 {
+  color: #fff;
+  font-size: 3em;
+  font-weight: 800;
+  line-height: 56px;
+  letter-spacing: 3px;
+}
+.main-banner h3 {
+  color: #ccc;
+  font-size: 2em;
+  font-weight: 600;
+}
+.main-banner {
+  background: url($baseurl + "/assets/img/banner.jpg") no-repeat;
+  background-size: cover;
+  min-height: 550px;
+}
+.highlight {
+  color: #ffff00 !important;
+  font-size: 1.2em !important;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+}
+
+.semi-trans-bg {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+.view-more {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-story {
+  border: 2px solid $color3;
+  border-radius: 30px;
+  color: #111;
+  margin-top: -10px;
+
+  &:hover {
+    color: #111;
+    font-weight: bold;
+    background: #ccc;
+  }
+}
+
+.elevator-pitch {
+  h2 {
+    background: #eee;
+    margin-bottom: 0;
+    padding: 1.5em 0;
+    font-size: 3em;
+    font-weight: 900;
+    color: #333;
+    letter-spacing: -1px;
+  }
+  .project-title {
+    padding: 0.8em 0;
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+}
+
+.section-title {
+  color: #111;
+  font-size: 3em;
+  font-weight: 800;
+  text-align: center;
+}
+
+// Feature Content
+.btn-volunteer {
+  background:	#ff8000;
+  border: transparent;
+  color: #fff;
+}
+.btn-volunteer:hover {
+  background: #fff;
+  color: #111;
+}
+.btn-donate {
+  background: #29a745;
+  border: transparent;
+  color: #fff;
+}
+.btn-donate:hover {
+  background: #fff;
+  color: #111;
+}
+
+.ftco-section {
+  margin-top: -70px;
+  
+  .quick-stats {
+    background: $color2;
+  }
+  #nurturing-projects {
+    color: #fff !important;
+    font-size: 50px;
+  }
+  #nearly-complete-projects {
+    color: #fff;
+    font-size: 30px;
+  }
+  .intro-video-section {
+    background: #eee;
+    padding: 0;
+
+    h2 {
+      color: #111 !important;
+    }
+    p {
+      color: #666 !important;
+    }
+    .author {
+      color: #333;
+      font-weight: 600;
+      font-size: 18px;
+    }
+  }
+  .bg-black {
+    background: #1e1e1e;
+  }
+  .text h2 {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1.1;
+    color: #fff;
+  }
+  .about-text h2 {
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 1.1;
+    color: #fff;
+  }
+  .about-text h4 {
+    color: #ddd;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  .about-text p {
+    text-align: justify;
+    color: #ccc;
+  }
+  .caption.focussed {
+    color: $color2 !important;
+    font-weight: bold;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+  }
+}
+
+// Why NIC Nepal
+.why-nic-nepal {
+  position: relative;
+  z-index: 99;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 4em 0 2em 0;
+
+  img {
+    width: 100%;
+    margin-top: 5%;
+    box-shadow: 1px 5px 30px #ccc;
+  }
+
+  .section-heading {
+    color: #111;
+    font-weight: 800;
+  }
+  .section-text {
+    color: #666;
+  }
+  .section-heading .highlight {
+    color: $color1;
+  }
+  .text-highlight {
+    font-size: 1.2em;
+    color: $color3;
+  }
+}
+.why-nic-nepal:after {
+  content: "";
+  background-color: #f9f9f9;
+  opacity: 0.8;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+// Mission vision values
+.mission-vision-values {
+  hr {
+    border: 1px solid #28a745;
+    width: 50%;
+  }
+  .card {
+    border: transparent;
+    background: transparent;
+    
+    .card-title .fas {
+      font-size: 2em;
+      color: #48a845 !important;
+    }
+    .card-caption {
+      color: #333;
+      font-size: 1.3em;
+      font-weight: 800;
+    }
+    .card-text {
+      // color: $color3;
+      color: #333;
+      font-size: 14px;
+    }
+  }
+}
+
+/**************** project highlights */
+.project-highlights, .projects-section {
+  .card {
+    border: 0px solid transparent;
+  }
+
+  .single-project-box {
+    background-color: #fafafa;
+    
+    a {
+      text-decoration: none;
+    }
+
+    .card-img-top {
+      border-radius: 0px;
+    }
+
+    .card {
+      background-color: transparent;
+      position: relative;
+
+      a {
+        text-decoration: none;
+        color: #333;
+      }
+
+      .read-more {
+        color: $color4;
+        font-size: 15px;
+      }
+
+      img {
+        height: 200px;
+        box-shadow: 4px 5px 30px rgba(black,.20);
+      }
+      
+      .card-body {
+        padding: 10px;
+        box-shadow: 4px 5px 30px rgba(black,.20);
+        
+        .proj-desc {
+          color: #666;
+          font-size: 14px;
+          font-weight: normal;
+          line-height: 25px;
+        }
+        .card-title {
+          color: #333;
+          text-transform: capitalize;
+          font-weight: 600;
+        }
+        .extra-line {
+          height: 20px;
+        }
+      }
+    }
+  }
+
+  .card-title{
+    margin-bottom: 0;
+  }
+
+  .table thead th {
+    color: #333;
+    font-size: 20px;
+  }
+  .table td {
+    color: #666;
+    font-weight: normal;
+  }
+
+}
+
+.quotetext {
+  font-family: "Open-sans", sans-serif;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+// Incubation and Our Support
+.incubation-and-our-support {
+  background: #f9f9f9;
+
+  .incubation-process {
+    position: relative;
+    background: url(../assets/img/funnel-bg-trans.png) no-repeat;
+    background-size: contain;
+    height: 450px;
+  }
+
+  .tab-content {
+    .tab-pane {
+      padding: 3em 4em;
+    }
+    .fas {
+      color: #48a845;
+      font-size: 3.5em;
+      padding: 10px;
+      background: #fafafa;
+    }
+    .support-caption {
+      color: #999;
+      font-size: 1em;
+      margin-top: 10px;
+    }
+  }
+  .nav-tabs {
+    border-bottom: none;
+  }
+  .nav-tabs .nav-link {
+    color: #0f209a;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: #edf7ff #edf7ff #edf7ff;
+    color: #fff;
+  }
+  .nav-tabs .nav-link.active {
+    background: #ff0800;
+  }
+  .nav-tabs .nav-link:hover {
+    background: #ff6f6a;
+    color: #fff;
+  }
+}
+
+
+
+// Footer
+.footer {
+  position: relative;
+  background: #1e2129;
+}
+.footer-content {
+  position: relative;
+  padding: 85px 0px 80px 0px;
+}
+.footer-content:before{
+  position: absolute;
+  content: '';
+  background: url($baseurl + "/assets/img/footer-pattern.png");
+  width: 744px;
+  height: 365px;
+  top: 50px;
+  right: 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.footer-content .contact-widget .footer-social li {
+  position: relative;
+  display: inline-block;
+  margin-right: 9px;
+}
+.footer-content .contact-widget .footer-social li:last-child{
+  margin-right: 0px;
+}
+.footer-content .contact-widget .footer-social li a {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  color: #fff;
+  text-align: center;
+}
+.footer-content .contact-widget .logo-box{
+  margin-bottom: 25px;
+}
+.footer-content .contact-widget .text p{
+  color: #9ea0a9;
+  margin-bottom: 15px;
+}
+.footer-content .footer-title{
+  position: relative;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.footer-content .service-widget .list li{
+  display: block;
+  margin-bottom: 12px;
+}
+.footer-content .service-widget .list li a{
+  position: relative;
+  display: inline-block;
+  color: #9ea0a9;
+}
+.footer-content .service-widget .list li a:hover{
+  color: $color1;
+  text-decoration: none;
+}
+.footer-content .contact-widget p{
+  color: #9ea0a9;
+  margin-bottom: 15px;
+}
+.footer-content .contact-widget .footer-title{
+  margin-bottom: 29px;
+}
+.contact-widget .text p {
+  i {
+    display: block;
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+  }
+  span {
+    display: block;
+    margin-left: 25px;
+  }
+}
+
+/** footer-bottom **/
+.footer-bottom{
+  position: relative;
+  background: #13151a;
+  padding: 5px 0;
+
+  a {
+    color: #28a745 !important;
+  }
+}
+.footer-bottom .copyright,
+.footer-bottom .copyright a {
+  position: relative;
+  color: #ccc;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.how-to-support {
+  .support-box {
+    padding: 0 3em;
+  }
+  .text-primary {
+    color: #333 !important;
+    font-weight: 800;
+    font-size: 1.5em;
+  }
+  .fas {
+    font-size: 3em;
+    color: #48a845;
+  }
+}
+
+
+// Gallery
+.gallery-trailer {
+  background: #f9f9f9;
+}
+.gallery img {
+  max-width: 100%;
+	width: 100%;
+	height: auto;
+  display: block;
+  border: 3px solid #fff;
+  box-shadow: 0px 0px 5px #ccc;
+	transition: transform .35s ease;
+}
+.gallery a {
+  overflow: hidden;
+}
+.gallery a:hover img {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	transform: scale(1.05);
+}
+
+
+.messages {
+  background: #EDF7FF;
+
+  .message-body {
+    background: #EDF7FF;
+  }
+
+  .card {
+    background-color: transparent;
+    border: none;
+
+    .card-title {
+      color: #555;
+    }
+
+    .card-body {
+      padding-top: 0;
+    }
+
+    .card-text {
+      font-size: 14px;
+      font-weight: 500;
+    }
+  }
+}

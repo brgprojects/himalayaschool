@@ -1,0 +1,46 @@
+<div class="blog-card mb-3">
+  <div class="row">
+    <div class="col-xs-12 col-md-5">
+      <img src="/assets/img/blogs/{{ include.post.thumbnail-img }}" class="img-fluid thumbnail-img" />
+    </div>
+    <div class="col-xs-12 col-md-7 py-4 pr-5">
+      <div class="border-bottom py-2">
+        <h5 class="blog-card-title font-weight-bold m-0">
+          <a class="post-title" href="{{ post.url | prepend: site.url }}">{{ include.post.title }}</a>
+        </h5>
+        <div class="blog-card-heading">
+          <span><i class="fas fa-user mr-2"></i>{{ include.post.author }}</span>
+          <span><i class="fas fa-calendar-alt"></i>
+            {{ include.post.date | date: "%b %d, %Y" }}
+          </span>
+          <small class="text-muted">
+            {% include read-time.html
+                              content=include.post.content
+                              bracket_start='('
+                              bracket_end=')'
+                              unit='min'
+                              approx='true'
+                              caption='read'
+                  %}
+          </small>
+        </div>
+      </div>
+      <p class="blog-card-text mb-2">
+        {{ include.post.content | strip_html | truncatewords: 30 }}
+        <br>
+        <a href="{{ post.url | prepend: site.url }}" class="blog-btn text-danger">Read more</a>
+      </p>
+      <p class="post-tags mb-0">
+        <i class="fa fa-tags"></i>
+        {% for tag in include.post.tags %}
+          {% if page.is_tags_page %}
+            {% assign tag_url_base = "" %}
+          {% else %}
+            {% assign tag_url_base = "/blogs/tags/" %}
+          {% endif %}
+          <a href="{{ tag_url_base }}#{{ tag | uri_escape }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,43 @@
+<section class="latest-blogs latest-blogs py-6 wow fadeInUp">
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-xs-12 col-md-12">
+        <div class="section-title text-center">
+          <h2 class="section-heading mb-0">Latest News or Blogs</h2>
+          <p class="section-subheading muted">
+          </p>
+        </div>
+      </div>
+    </div>
+
+    {% assign blogs_count = site.posts.size %}
+
+    <div class="row blog-body">
+      <div class="col-md-8">
+        <div class="row featured-post mr-3">
+          <div class="col-md-6">
+            {% for post in site.posts limit: 1 %}
+              {% include blogs/featured-post.html post=post %}
+            {% endfor %}
+          </div>
+          <div class="col-md-6">
+            {% for post in site.posts offset: 1 limit: 1 %}
+              {% include blogs/featured-post.html post=post %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        {% for post in site.posts offset: 2 limit: 2 %}
+          {% include blogs/non-featured-post.html post=post %}
+        {% endfor %}
+        {% if blogs_count > 3 %}
+          <div class="row read-all mt-4 text-center">
+            <a href="/blogs" class="btn btn-lg btn-secondary mt-4 px-5 m-auto">Read All</a>
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>

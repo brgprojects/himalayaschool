@@ -1,0 +1,33 @@
+<section class="project-highlights py-6 wow fadeInUp">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title">Recent Projects</h2>
+      </div>
+    </div>
+    <div class="row mt-3">
+      {% for project in site.data.projects %}
+        <div class="col-sm-6 col-lg-3 mb-sm-4">
+          <div class="single-project-box">
+            <div class="card">
+              <a href="/projects/{{ project.url }}">
+                <img src="/assets/img/projects/{{ project.img }}" class="card-img-top" alt="blog">
+                <div class="card-body">
+                  <h6 class="card-title">{{ project.name }}</h6>
+                  <hr>
+                  <p class="proj-desc mb-0">
+                    {{ project.desc | strip_html | truncate: 100 }}
+                  </p>
+                  <a href="/projects/{{ project.url }}" class="read-more">Read More</a>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <div class="row mt-3 view-more">
+      <a href="/projects" role="button" class="btn btn-success py-3 px-4">View All Projects</a>
+    </div>
+  </div>
+</section>

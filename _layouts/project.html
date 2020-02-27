@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div class="project-details py-6">
+  <div class="container mt-5">
+    <!-- Wrapper Start -->
+    <div class="row">
+      <div class="col-md-12 cover-image">
+        {% assign cover-img=page.cover-img %}
+        {% assign img-title=page.title %}
+        {% include image.html
+                            img=cover-img
+                            title=img-title
+                            class="full-width"
+                %}
+      </div>
+      <div class="col-xs-12 col-md-12 px-9">
+        <h1 class="project-title">{{ page.title }}</h1>
+        <div class="row project-info font-italic">
+          <div class="col-md-6 col-sm-12 font-italic">
+            <span><i class="fas fa-user mr-2"></i>By&nbsp;{{ page.author }}</span>
+            <span><i class="fas fa-calendar-alt"></i>
+              {{ page.date | date: "%b %d, %Y" }}
+            </span>
+            <small class="text-muted">
+              {% include read-time.html
+                            content=content
+                            bracket_start='('
+                            bracket_end=')'
+                            unit='min'
+                            approx='true'
+                            caption='read'
+                %}
+            </small>
+          </div>
+        </div>
+        <hr />
+        <div class="project-body">
+          {{ content }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,71 @@
+---
+layout: default
+title: Projects
+page_name: projects
+---
+
+<section class="projects-section py-5 wow fadeInUp">
+  {% include elevator-pitch.html %}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-title py-4">Projects</h2>
+      </div>
+    </div>
+    <div class="row">
+      {% for project in site.data.pilot_projects %}
+      <div class="col-sm-6 col-lg-3 mb-sm-4">
+        <div class="single-project-box">
+          <div class="card">
+            <!-- <a href="/projects/{{ project.url }}"> -->
+            <a href="/projects/{{ project.url }}">
+              <img src="/assets/img/projects/{{ project.img }}" class="card-img-top" alt="blog">
+              <div class="card-body">
+                <h6 class="card-title">{{ project.name }}</h6>
+                <!-- {% if project.name.size < 30 %}
+                    <h6 class="extra-line"></h6>
+                  {% endif %} -->
+                <hr>
+                <p class="proj-desc mb-0">
+                  {{ project.desc | strip_html | truncate: 100 }}
+                </p>
+                <a href="/projects/{{ project.url }}" class="read-more">Read More</a>
+                <!-- <div class="skill">
+                    <h5 class="status">Status</h5>
+                    <div class="skill-bar skill11 wow slideInLeft animated">
+                      <span class="skill-count11">75%</span>
+                    </div>
+                  </div> -->
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <!-- Other Projects -->
+    <div class="row">
+      <h1 class="py-4 text-center ml-3">Other Projects</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for project in site.data.projects_list %}
+            <tr>
+              <th scope="row">{{ forloop.index }}</th>
+              <td>{{ project }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+
+  </div>
+</section>

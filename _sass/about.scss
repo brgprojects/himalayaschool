@@ -1,0 +1,28 @@
+.about-section {
+  .our-story {
+    color: $color3;
+  }
+
+  font-family: "Open sans", sans-serif;
+
+  .primary-heading {
+    font-size: 15px;
+    color: #333;
+  }
+  .secondary-heading {
+    font-size: 15px;
+    color: #777;
+    font-weight: normal;
+  }
+  .board-members {
+    .card-text {
+      font-size: 13px;
+      font-weight: normal;
+    }
+    .card-title {
+      color: #333;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+}

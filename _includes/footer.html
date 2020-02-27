@@ -1,0 +1,87 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="col-md-4 col-sm-12 footer-column">
+          <div class="logo-widget footer-widget">
+            <div class="footer-title">ABOUT</div>
+            <div class="text">
+              <p>
+                Shree Himalaya Secondary School was established in 1961 and registered under the Ministry of Education and Sport Government school, Nepal. It is an English medium school located at Barpak Village, Gorkha in Nepal.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-12 offset-md-1 footer-column">
+          <div class="service-widget footer-widget">
+            <div class="footer-title">QUICK LINKS</div>
+            <ul class="list pl-0">
+              <li><a href="/">Home</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/volunteer">Volunteering</a></li>
+              <li><a href="/donate">Donate</a></li>
+              <li><a href="/gallery">Gallery</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-12 footer-widget">
+          <div class="contact-widget footer-widget">
+            <div class="footer-title">CONTACTS</div>
+            <div class="text">
+              <a href="https://goo.gl/maps/76FbQzjHeGwNq5aT6" target="_blank">
+                <p>
+                  <i class="fas fa-map-marker-alt"></i> 
+                  <span>{{ site.data.info.address }}</span>
+                </p>
+              </a>
+              <a href="tel:{{ site.data.info.office_phone }}" target="_blank">
+                <p>
+                  <i class="fas fa-phone"></i>
+                  <span>{{ site.data.info.office_phone }}</span>
+                </p>
+              </a>
+              {% if site.data.info.mobile %}
+                <a href="tel:+977 9841592361">
+                  <p><i class="fas fa-mobile-alt"></i>
+                    <span>+977 9841592361</span>
+                  </p>
+                </a>
+              {% endif %}
+              <a href="mailto:{{ site.data.info.email1 }}" target="_blank">
+                <p><i class="fas fa-envelope"></i>
+                  <span>{{ site.data.info.email1 }}</span>
+                </p>
+              </a>
+              {% if site.data.info.email2 %}
+                <a href="mailto:{{ site.data.info.email2 }}" target="_blank">
+                  <p><i class="fas fa-envelope"></i>
+                    <span>{{ site.data.info.email2 }}</span>
+                  </p>
+                </a>
+              {% endif %}
+            </div>
+
+            <ul class="footer-social pl-0">
+              <li>
+                <a href="https://www.facebook.com/shhssbarpak" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UCHnfYd41hIeEgutoT3LKeNw" target="_blank"><i class="fab fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="footer-bottom">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-sm-12">
+        <div class="copyright text-center">Shree Himalaya Secondary School Barpak © 2020 | All Right Reserved | Website Developed by <a href="https://freelancerbrg.com" target="_blank"><b>BRG</b></a></div>
+      </div>
+    </div>
+  </div>
+</div>

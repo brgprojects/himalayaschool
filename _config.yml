@@ -1,0 +1,17 @@
+title: Shree Himalaya School Barpak
+email: abc@gmail.com
+description: >-
+  Some description of school
+baseurl: ""
+url: "https://himalayaschoolbarpak.org"
+
+google_analytics: UA-154701435-3
+
+thumbnail_path: "logo.png"
+facebook_url: 
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

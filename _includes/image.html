@@ -1,0 +1,25 @@
+<div class="row my-4">
+  <div class="col-md-12 col-sm-12">
+    <div class="image-wrapper">
+      {% if include.url %}
+      <a href="/assets/img/{{ include.url }}" title="{{ include.title }}" target="_blank">
+        {% endif %}
+
+        <img src="/assets/img/{{ include.img }}" alt="{{ include.title }}" class="img-fluid {{ include.class }}" />
+
+        {% if include.url %}
+      </a>
+      {% endif %}
+
+      
+        <p class="image-caption text-center">
+          {% if include.caption %}
+            {{ include.caption }} 
+          {% endif %}
+          {% if include.photo_credits %}
+            Photo: {{ include.photo_credits }}
+          {% endif %}
+        </p>
+    </div>
+  </div>
+</div>
