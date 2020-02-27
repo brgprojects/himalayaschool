@@ -115,13 +115,13 @@
 }
 
 .elevator-pitch {
-  h2 {
+  p {
     background: #eee;
     margin-bottom: 0;
     padding: 1.5em 0;
-    font-size: 3em;
-    font-weight: 900;
-    color: #333;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: $color2;
     letter-spacing: -1px;
   }
   .project-title {
