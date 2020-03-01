@@ -3,7 +3,7 @@
   height: 70px;
   padding: 0; 
   background: #fff;
-  box-shadow: 4px 5px 30px rgba(0,0,0,0.8);
+  box-shadow: 4px 5px 30px rgba(0,0,0,0.2);
 }
 .navbar-nav .nav-item.active .nav-link {
   color: #111;
@@ -172,22 +172,11 @@
     color: #fff;
     font-size: 30px;
   }
-  .intro-video-section {
-    background: #eee;
-    padding: 0;
 
-    h2 {
-      color: #111 !important;
-    }
-    p {
-      color: #666 !important;
-    }
-    .author {
-      color: #333;
-      font-weight: 600;
-      font-size: 18px;
-    }
+  .about-text {
+    padding: 3em;
   }
+  
   .bg-black {
     background: #1e1e1e;
   }
@@ -266,7 +255,7 @@
 // Mission vision values
 .mission-vision-values {
   hr {
-    border: 1px solid #28a745;
+    border: 1px solid #0f2dff;
     width: 50%;
   }
   .card {
@@ -275,16 +264,16 @@
     
     .card-title .fas {
       font-size: 2em;
-      color: #48a845 !important;
+      color: #0f2dff !important;
     }
     .card-caption {
-      color: #333;
+      color: #555;
       font-size: 1.3em;
       font-weight: 800;
     }
     .card-text {
       // color: $color3;
-      color: #333;
+      color: #777;
       font-size: 14px;
     }
   }
@@ -364,7 +353,7 @@
 }
 
 .quotetext {
-  font-family: "Open-sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.2em;
   font-style: italic;
 }
@@ -385,7 +374,7 @@
       padding: 3em 4em;
     }
     .fas {
-      color: #48a845;
+      color: #0f2dff;
       font-size: 3.5em;
       padding: 10px;
       background: #fafafa;
@@ -451,8 +440,13 @@
   width: 42px;
   height: 42px;
   line-height: 42px;
-  color: #fff;
+  background-color: #fff;
   text-align: center;
+
+  .fab {
+    font-size: 20px;
+    padding: 10px;
+  }
 }
 .footer-content .contact-widget .logo-box{
   margin-bottom: 25px;
@@ -509,7 +503,7 @@
   padding: 5px 0;
 
   a {
-    color: #28a745 !important;
+    color: #0f2dff !important;
   }
 }
 .footer-bottom .copyright,
@@ -531,7 +525,7 @@
   }
   .fas {
     font-size: 3em;
-    color: #48a845;
+    color: #0f2dff;
   }
 }
 
@@ -582,7 +576,6 @@
 
     .card-text {
       font-size: 14px;
-      font-weight: 500;
     }
   }
 }
