@@ -1,7 +1,7 @@
 // Header SCSS
 .navbar {
   height: 70px;
-  padding: 0; 
+  padding: 0;
   background: #fff;
   box-shadow: 4px 5px 30px rgba(0,0,0,0.2);
 }
@@ -10,42 +10,42 @@
   font-weight: 800;
 }
 .navbar-brand {
-  height: inherit; 
+  height: inherit;
   padding-bottom: 0px;
 }
 .navbar-brand img {
   height: 90%;
-  margin-left: 20%; 
+  margin-left: 20%;
 }
 .navbar-nav {
-  margin-left: 30%; 
+  margin-left: 30%;
 }
 .navbar-toggler {
-  margin-right: 10px; 
+  margin-right: 10px;
 }
 .navbar-collapse .navbar-nav a {
   color: black;
-  font-size: 16px; 
+  font-size: 16px;
 }
 .navbar-collapse .nav-item {
   margin-right: 10px;
 }
 .navbar-collapse .nav-link {
   padding: 5px;
-  font-weight: 500; 
+  font-weight: 500;
   text-transform: uppercase;
 }
 .navbar .dropdown {
-  margin-top: 3px; 
+  margin-top: 3px;
 }
 .navbar .dropdown .dropdown-menu {
-  width: 200px; 
+  width: 200px;
 }
 .navbar .dropdown .dropdown-menu li:hover {
-  background: #eaeaea; 
+  background: #eaeaea;
 }
 .btn.active:focus {
-  box-shadow: none !important; 
+  box-shadow: none !important;
 }
 
 // Banner
@@ -160,7 +160,7 @@
 
 .ftco-section {
   margin-top: -70px;
-  
+
   .quick-stats {
     background: $color2;
   }
@@ -176,7 +176,7 @@
   .about-text {
     padding: 3em;
   }
-  
+
   .bg-black {
     background: #1e1e1e;
   }
@@ -261,7 +261,7 @@
   .card {
     border: transparent;
     background: transparent;
-    
+
     .card-title .fas {
       font-size: 2em;
       color: #0f2dff !important;
@@ -287,7 +287,7 @@
 
   .single-project-box {
     background-color: #fafafa;
-    
+
     a {
       text-decoration: none;
     }
@@ -314,11 +314,11 @@
         height: 200px;
         box-shadow: 4px 5px 30px rgba(black,.20);
       }
-      
+
       .card-body {
         padding: 10px;
         box-shadow: 4px 5px 30px rgba(black,.20);
-        
+
         .proj-desc {
           color: #666;
           font-size: 14px;
@@ -440,7 +440,6 @@
   width: 42px;
   height: 42px;
   line-height: 42px;
-  background-color: #fff;
   text-align: center;
 
   .fab {
