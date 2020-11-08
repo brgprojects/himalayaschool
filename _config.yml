@@ -14,4 +14,3 @@ facebook_url:
 markdown: kramdown
 plugins:
   - jekyll-feed
-  - jekyll-seo-tag
